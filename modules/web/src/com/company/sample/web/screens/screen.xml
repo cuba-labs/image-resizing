@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.sample.web.screens.Screen"
+        messagesPack="com.company.sample.web.screens">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <groupBox caption="Photo"
+                  expand="embeddedImage"
+                  height="275px"
+                  spacing="true"
+                  width="275">
+            <embedded id="embeddedImage"
+                      align="MIDDLE_CENTER"
+                      width="100%"/>
+            <hbox align="BOTTOM_LEFT"
+                  spacing="true">
+                <upload id="uploadField"/>
+                <button id="downloadImageBtn"
+                        caption="Download"
+                        invoke="onDownloadImageBtnClick"/>
+                <button id="clearImageBtn"
+                        caption="Clear"
+                        invoke="onClearImageBtnClick"/>
+            </hbox>
+        </groupBox>
+    </layout>
+</window>
